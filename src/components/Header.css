@@ -103,6 +103,9 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  width:50%;
+  right:0;
+  
 }
 
 .menu-toggle span {
