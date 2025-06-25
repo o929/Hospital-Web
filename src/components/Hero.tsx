@@ -4,6 +4,18 @@ import React from 'react';
 import './Hero.css';
 
 const Hero: React.FC = () => {
+  window.onscroll = () => {
+    const rollupBtn = document.querySelector('.rollup-btn') as HTMLElement;
+    if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) { //the first one is for Safari, the second one is for Chrome, Firefox, IE and Opera
+      rollupBtn.style.display = 'block';
+    } else {
+      rollupBtn.style.display = 'none';
+    }
+  }
+function rollup() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
   return (
     <section id="home" className="hero">
       <div className="container">
@@ -36,7 +48,7 @@ const Hero: React.FC = () => {
           <div className="hero-image">
             <div className="hero-card">
               <div className="doctor-avatar">👨‍⚕️</div>
-              <h3>Dr. Ali Rahman</h3>
+              <h3>Dr. Ali Yagoub Idris</h3>
               <p>Board Certified Physician</p>
               <div className="credentials">
                 <span className="credential">MD, Internal Medicine</span>
@@ -46,6 +58,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+      <button className='rollup-btn' onClick={rollup}>⬆️</button>
     </section>
   );
 };
