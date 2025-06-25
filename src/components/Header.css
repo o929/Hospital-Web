@@ -103,9 +103,6 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  width:50%;
-  right:0;
-  
 }
 
 .menu-toggle span {
@@ -128,9 +125,10 @@
   
   .nav {
     position: absolute;
+    /* height: 100% */
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 40%;
     background: var(--bg-white);
     box-shadow: var(--shadow-md);
     transform: translateY(-100%);
@@ -195,8 +193,8 @@
   background-color: rgb(255, 34, 34);
   padding: 20px;
   position: absolute;
-  top: 200px;
-  right: 50%;
+  top: 250%;
+  right: 35%;
   color: white;
   font-weight: bold;
   border-radius: 5px;
