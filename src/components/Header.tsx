@@ -5,11 +5,21 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
   
-  const toggelPhoneNo = () => {
+  const toggelPhoneNo = (e) => {
+    e.stopPropagation();
     const phoneNo = document.getElementById("phone-No");
     if (phoneNo) {
+      phoneNo.addEventListener("click", (e) => e.stopPropagation());
       phoneNo.style.display = phoneNo.style.display === "block" ? "none" : "block";
     }
+    setTimeout(() => {      
+      document.addEventListener('click', () => {
+        if (phoneNo) {
+          phoneNo.style.display = "none";
+        }
+      });
+    }, 0);
+  
   }
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -65,7 +75,7 @@ const Header: React.FC = () => {
             <span></span>
             <span></span>
           </button>
-          <span id='phone-No'>0117054428</span>
+          <span id='phone-No'>+249117054428</span>
         </div>
       </div>
     </header>
