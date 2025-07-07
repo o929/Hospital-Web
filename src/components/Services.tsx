@@ -3,12 +3,22 @@ import './Services.css';
 
 const Services: React.FC = () => {
     
-    const toggelPhoneNo = () => {
-      const phoneNo = document.getElementById("phone-No");
-      if (phoneNo) {
-        phoneNo.style.display = phoneNo.style.display === "block" ? "none" : "block";
-      }
+  const toggelPhoneNo = (e) => {
+    e.stopPropagation();
+    const phoneNo = document.getElementById("phone-No");
+    if (phoneNo) {
+      phoneNo.addEventListener("click", (e) => e.stopPropagation());
+      phoneNo.style.display = phoneNo.style.display === "block" ? "none" : "block";
     }
+    setTimeout(() => {      
+      document.addEventListener('click', () => {
+        if (phoneNo) {
+          phoneNo.style.display = "none";
+        }
+      });
+    }, 0);
+  
+  }
   const services = [
     {
       icon: '🩺',

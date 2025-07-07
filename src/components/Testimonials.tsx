@@ -7,25 +7,25 @@ import './Testimonials.css';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      rating: 5,
+      name: 'Sarah mohammed',
+      rating: 4,
       text: 'Dr. Ali is an exceptional physician who truly cares about his patients. His thorough approach and genuine concern for my health made all the difference in my treatment.',
       condition: 'Diabetes Management'
     },
     {
-      name: 'Michael Chen',
+      name: 'Ahmed Jaber',
       rating: 5,
       text: 'The best doctor I have ever worked with. Dr. Ali takes the time to listen and explain everything clearly. The staff is also incredibly professional and welcoming.',
       condition: 'Hypertension Care'
     },
     {
-      name: 'Emily Rodriguez',
-      rating: 5,
+      name: 'Khalid Idris',
+      rating: 3,
       text: 'Dr. Ali and his team provided outstanding care during my pregnancy. Their attention to detail and compassionate care made this journey so much easier.',
       condition: 'Prenatal Care'
     },
     {
-      name: 'David Thompson',
+      name: 'Mona Alfatih',
       rating: 5,
       text: 'I have been a patient for over 5 years. Dr. Ali is knowledgeable, patient, and always available when I need medical advice. Highly recommend!',
       condition: 'Preventive Care'

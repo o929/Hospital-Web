@@ -61,7 +61,7 @@ const Header: React.FC = () => {
               <li><a href="#services" className="nav-link">Services</a></li>
               <li><a href="#about" className="nav-link">About</a></li>
               <li><a href="#testimonials" className="nav-link">Testimonials</a></li>
-              <li><a href="#contact" className="nav-link">Contact</a></li>
+              <li><a href="#contact" className="nav-link">Contact , Appointment</a></li>
             </ul>
           </nav>
           

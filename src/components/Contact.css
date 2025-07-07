@@ -192,3 +192,25 @@
     padding: 0.75rem;
   }
 }
+.sent{
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+  position: fixed;
+  top: 50%;
+  color: white;
+  background-color: green;
+  z-index: 999999;
+  /* display: none; */
+}
+.failedtosend{
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  position: fixed;
+  top: 80%;
+  color: white;
+  background-color: red;
+  /* display: none; */
+  z-index: 999999;
+}
