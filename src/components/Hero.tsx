@@ -1,7 +1,7 @@
-
-
 import React from 'react';
 import './Hero.css';
+
+import doctorImg from '../assets/doctor.png';
 
 const Hero: React.FC = () => {
   window.onscroll = () => {
@@ -47,7 +47,10 @@ function rollup() {
           </div>
           <div className="hero-image">
             <div className="hero-card">
-              <div className="doctor-avatar">👨‍⚕️</div>
+              <div className="doctor-avatar">
+<img src={doctorImg} alt="Dr. Ali Yagoub Idris" />
+                
+              </div>
               <h3>Dr. Ali Yagoub Idris</h3>
               <p>Board Certified Physician</p>
               <div className="credentials">
